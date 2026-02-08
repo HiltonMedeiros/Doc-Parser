@@ -16,15 +16,18 @@ O **Doc-Parser** é uma API moderna e de alta performance desenvolvida para auto
 
 Graças ao Docker, você não precisa configurar o Tesseract no seu sistema operacional. Tudo o que você precisa é do Docker Desktop instalado.
 
-
+### 1. Construir a Imagem
 No terminal, dentro da pasta raiz do projeto, execute:
 ```bash
 docker build -t doc-parser-image .
 
-### 2. Rodar o Container:
+### 2. Rodar o Container
 ```bash
 docker run -d -p 8000:8000 --name meu-parser doc-parser-image
 
 ### 3. Testar a API
 
-Abra o navegador e acesse a documentação interativa (Swagger UI): 👉 http://localhost:8000/docs
+Abra o navegador e acesse a documentação interativa (Swagger UI):
+ 👉 http://localhost:8000/docs
+
+ Desenvolvido por Hilton Medeiros 
